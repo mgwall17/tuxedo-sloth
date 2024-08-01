@@ -91,13 +91,9 @@ section {
     flex-direction: column;
   }
 
-  .col-text, .col-img {
-    width: 100%; /* Make columns take full width when stacked */
-  }
-
-  .col-img img {
-    width: 100%; /* Ensure the image scales down to fit the container */
-  }
+    .col {
+      width: 100%; /* Set the width to 100% for one column */
+    }
 }
 
 /* Text styles */

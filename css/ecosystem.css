@@ -1,0 +1,22 @@
+.logo-gallery {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px 25px;
+  flex-wrap: wrap;
+}
+
+.logo-gallery img {
+  max-width: 200px;
+  height: auto;
+  flex: 1 1 calc(50% - 20px); /* 2 columns*/
+}
+
+
+@media (max-width: 768px) {
+  .logo-gallery img {
+    flex: 1 1 calc(100% - 20px); /* 1 column */
+  }
+}
