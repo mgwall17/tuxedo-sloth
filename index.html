@@ -4,30 +4,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/globalStyles.css">
-  <link rel="stylesheet" href="css/navBar.css">
-  <link rel="stylesheet" href="css/card.css">
+  <link rel="stylesheet" href="css/importStyles.css">
+  <script src="/script.js"></script>
 </head>
 
 <body>
-  <div class="container">
-    <nav class="navigation">
-      <div class="logo">
-        <img src="/images/exosphereLockup.svg" alt="exosphere logo" width="216" height="72">
-      </div>
+
+  <nav class="navigation">
+    <div class="nav-container">
+      <a href="#home">
+        <div class="logo">
+          <img src="/images/exosphereLockup.svg" alt="exosphere logo" width="216" height="72">
+        </div>
+      </a>
       <div class="nav-links">
-        <a href="#overview-features" class="nav-link">Overview</a>
+        <a href="#overview" class="nav-link">Overview</a>
         <a href="#faq" class="nav-link">FAQ</a>
         <a href="#sponsor" class="nav-link">Sponsor</a>
         <a href="#contribute-code" class="nav-link">Contribute</a>
         <a href="#contact" class="nav-link">Contact</a>
       </div>
-    </nav>
-    <div class="hero">
+    </div>
+  </nav>
+  <div class="container">
+    <div class="hero" id="home">
       <h1>Welcome to Exosphere</h1>
       <h2>Connection to Cloud Computing for Everyone</h2>
       <div class="heroBtns">
-        <a class="gradient btn">Demo Exosphere</a>
+        <a class="gradient btn" href="#demo">Demo Exosphere</a>
         <a class="gitlab btn">
           <div class="iconBox"><img class="icon" src="/icons/gitlab.svg" /></div>View on GitLab
         </a>
@@ -40,10 +44,10 @@
   <!-- Banner -->
   <div class="banner">
     <div class="row">
-      <div class="col-img">
+      <div class="col">
         <img src="/images/exotest.png" />
       </div>
-      <div class="col-text">
+      <div class="col">
         <h3 class="left-align">What is Exosphere?</h3>
         <p>Exosphere makes it easy to use your OpenStack allocations with a user-friendly interface designed with
           researchers and non-IT professionals in mind.</p>
@@ -55,79 +59,210 @@
   </div>
   <!-- Persona Cards -->
   <div class="container">
-  <div class="card-row">
-    <div class="card">
-      <div class="card-content">
-        <div class="card-image"><img src="/images/lady.png" /></div>
-        <h3 class="card-title">Cloud Computing for All</h3>
-        <p class="card-description">Learn how to run Exosphere independently and ensure compatibility with various
-          clouds and operating systems. Discover our project's values and goals, reference our nomenclature, and install
-          the Exosphere Progressive Web Application. Find out about cockpit deprecation and manual installation.</p>
+    <section>
+      <div class="card-row">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image"><img src="/images/lady.png" /></div>
+            <h3 class="card-title">Cloud Computing for All</h3>
+            <p class="card-description">Learn how to run Exosphere independently and ensure compatibility with various
+              clouds and operating systems. Discover our project's values and goals, reference our nomenclature, and
+              install
+              the Exosphere Progressive Web Application. Find out about cockpit deprecation and manual installation.</p>
+          </div>
+          <div class="card-btn">
+            <a class="btn gradient" href="#overview">
+              Explore Features
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image"><img src="/images/lady.png" /></div>
+            <h3 class="card-title">Cloud Operator</h3>
+            <p class="card-description">Through Exosphere, you can provide a powerful interface to your community with
+              customized branding, nomenclature, and single sign-on integration. Easily set up instances, solve CORS
+              issues
+              with our Cloud CORS Proxy, and use the User Application Proxy (UAP). </p>
+          </div>
+          <div class="card-btn">
+            <a class="btn gradient">
+              <div class="iconBox"><img class="icon" src="/icons/openNew.svg" /></div>
+              Learn how to Deploy
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image"><img src="/images/lady.png" /></div>
+            <h2 class="card-title">Contribute to Exosphere</h2>
+            <p class="card-description">Get started quickly with our guide for new contributors. Explore the codebase,
+              learn
+              about our UI, layout, and design systems, and review our contribution policies. Follow our merge request
+              checklist, read architecture decision records, and run Exosphere and browser integration tests.</p>
+          </div>
+          <div class="card-btn">
+            <a class="btn gradient">
+              <div class="iconBox"><img class="icon" src="/icons/openNew.svg" /></div>
+              View Quickstart Guide
+            </a>
+          </div>
+        </div>
       </div>
-      <a class="btn gradient">
-        Explore Features
-      </a>
-    </div>
-    <div class="card">
-      <div class="card-content">
-        <div class="card-image"><img src="/images/lady.png" /></div>
-        <h2 class="card-title">Cloud Operator</h2>
-        <p class="card-description">Through Exosphere, you can provide a powerful interface to your community with
-          customized branding, nomenclature, and single sign-on integration. Easily set up instances, solve CORS issues
-          with our Cloud CORS Proxy, and use the User Application Proxy (UAP). </p>
-      </div>
-      <a class="btn gradient">
-        Learn how to Deploy
-      </a>
-    </div>
-    <div class="card">
-      <div class="card-content">
-        <div class="card-image"><img src="/images/lady.png" /></div>
-        <h2 class="card-title">Contribute to Exosphere</h2>
-        <p class="card-description">Get started quickly with our guide for new contributors. Explore the codebase, learn
-          about our UI, layout, and design systems, and review our contribution policies. Follow our merge request
-          checklist, read architecture decision records, and run Exosphere and browser integration tests.</p>
-      </div>
-      <a class="btn gradient">
-        View Quickstart Guide
-      </a>
-    </div>
-  </div>
- 
+    </section>
     <!-- Demo Section -->
-    <h2 class="left-align">Try Exosphere</h2>
-    <div class="card-row">
-      <div class="card">
-        <div class="card-content">
-         <img src="/icons/openstackLogo.svg" />
-          <h3 class="card-title">Demo with Openstack Cloud</h3>
-          <p class="card-description">
-            Use your existing public Openstack cloud allocation to try out Exosphere.</p>
+    <section id="demo">
+      <div class="demo-container">
+        <h2 class="left-align
+      <h2 class="left-align">Try Exosphere</h2>
+      <div class="demo-row">
+        <div class="demo-card">
+          <div class="demo-content">
+            <div class="demo-image">
+              <img src="/icons/openstackLogo.svg" />
+            </div>
+            <h3 class="demo-title">Demo with Openstack</h3>
+            <p class="demo-description">
+              Use your existing public Openstack cloud allocation to try out Exosphere.</p>
+          </div>
+          <div class="demo-btn">
+            <a class="btn gradient">
+              <div class="iconBox"><img class="icon" src="/icons/openNew.svg" /></div>
+              Launch
+            </a>
+          </div>
         </div>
-        <a class="btn gradient">
-          Launch
-        </a>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <img src="/icons/jetstream2Logo.svg" />
-          <h2 class="card-title">Demo with Jetstream2</h2>
-          <p class="card-description">Use your existing Jetstream2 allocation to try out Exosphere.</p>
+        <div class="demo-card">
+          <div class="demo-content">
+            <div class="demo-image">
+            <img src="/icons/jetstream2Logo.svg" />
+          </div>
+            <h3 class="demo-title">Demo with Jetstream2</h3>
+            <p class="demo-description">Use your existing Jetstream2 allocation to try out Exosphere.</p>
+          </div>
+          <div class="demo-btn">
+            <a class="btn gradient">
+              <div class="iconBox"><img class="icon" src="/icons/openNew.svg" /></div>
+              Launch
+            </a>
+          </div>
         </div>
-        <a class="btn gradient">
-          Launch
-        </a>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <img src="/icons/codelocal.png" width="150px"/>
-          <h2 class="card-title">Run Locally</h2>
-          <p class="card-description">For those who are code-savvy and don’t trust demo sites. We understand.</p>
+        <div class="demo-card">
+          <div class="demo-content">
+            <div class="demo-image">
+            <img src="/icons/codelocal.png" width="150px" />
+            </div>
+            <h3 class="demo-title">Run Locally</h3>
+            <p class="demo-description">For those who are code-savvy and don’t trust demo sites. We understand.</p>
+          </div>
+          <div class="demo-btn">
+            <a class="btn gradient">
+              <div class="iconBox"><img class="icon" src="/icons/DocIcon.svg" /></div>
+              Learn More
+            </a>
+          </div>
         </div>
-        <a class="btn gradient">
-          Learn More
-        </a>
       </div>
-    </div>
+      </div>
+    </section>
+    <!-- Overview Section -->
+    <section id="overview">
+      <div>
+        <h2 class="left-align">Overview and Features</h2>
+      </div>
+      <div class="row">
+        <div class="main-feature">
+          <div class="exosphere-img">
+            <img src="/images/screenshot.png" width="100%" alt="Screenshot of Exosphere Dashboard">
+          </div>
+          <a class="gradient btn">
+            <div class="iconBox"><img class="icon" src="/icons/openNew.svg" /></div>View video tour
+          </a>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon"></div>
+            <h2 class="feature-title">Create Instances</h2>
+            <p class="feature-description">Create instances to run your code, and volumes to manage your data, create
+              containers for intensive compute jobs, disposable experiments, and persistent web services.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"></div>
+            <h2 class="feature-title">Everyone loves Graphs</h2>
+            <p class="feature-description">Pretty graphs show an instance's resource usage at a glance.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"></div>
+            <h2 class="feature-title">Run it Yourself</h2>
+            <p class="feature-description">100% self-hostable, 99% standalone client application.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"></div>
+            <h2 class="feature-title">One-Click Access to Clouds</h2>
+            <p class="feature-description">Get one-click, browser-based shell and graphical desktop access to cloud
+              instances (via <span class="link">Apache Guacamole</span>).</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"></div>
+            <h2 class="feature-title">Custom Themes</h2>
+            <p class="feature-description">If you're a cloud operator, deliver a customized interface with
+              white-labeling, localization, and single sign-on.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"></div>
+            <h2 class="feature-title">More Features Ahead</h2>
+            <p class="feature-description">Check out our <span class="link">roadmap</span> for future updates.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="faq" class="accordion">
+      <h2 class="left-align">Frequently Asked Questions</h2>
+      <div class="accordion-item">
+        <button class="accordion-button" aria-expanded="false">
+          <div class="question"><img class="icon" src="/icons/chatIcon.svg"/><p class="accordion-title">What is Openstack?</p></div>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content">
+          <p> OpenStack is the operating system and APIs that power public research clouds like Jetstream2 and Chameleon, private clouds at organizations like Wikimedia and CERN, and public commercial clouds like OVH, Fuga, Vexxhost, and Leafcloud. Any organization can run OpenStack on its own hardware to provide a cloud service for its own community, or for the world.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button" aria-expanded="false">
+          <div class="question"><img class="icon" src="/icons/chatIcon.svg"/> <p class="accordion-title">What can I do with Exosphere?</p></div>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content">
+            <ul>
+            <li><p>Create instances to run your code, and volumes to manage your data</p></li>
+            <li><p> Works great for containers, intensive compute jobs, disposable experiments, and persistent web services</p></li>
+              <li><p>Get one-click, browser-based shell and graphical desktop access to cloud instances (via Apache Guacamole)</p></li>
+              <li><p>Pretty graphs show an instance's resource usage at a glance</p></li>
+              <li><p>If you're a cloud operator, deliver a customized interface with white-labeling, localization, and single sign-on</p></li>
+              <li><p>100% self-hostable, 99% standalone client application</p></li>
+                <li><p>Two small proxy servers secure web browser connections to OpenStack APIs, and interactive services running on cloud instances.</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button" aria-expanded="false"> <div class="question"><img class="icon" src="/icons/chatIcon.svg"/>
+          <p class="accordion-title">Section 3</p></div>
+          <span class="accordion-icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content">
+          <p>Content for section 3 goes here.</p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Exosphere. All rights reserved.</p>
+        <nav class="footer-nav">
+          <a href="#privacy-policy">Privacy Policy</a>
+          <a href="#terms-of-service">Terms of Service</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+      </div>
+    </footer>
   </div>
 </body>

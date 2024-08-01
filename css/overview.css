@@ -1,0 +1,82 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.feature-card {
+  width: 300px;
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exosphere-img {
+  min-width: 500px;
+  max-width: 600px;
+}
+
+.feature-icon {
+  width: 85px;
+  height: 85px;
+  background: #D2CFCF;
+  border-radius: 50%;
+}
+
+.feature-title {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.feature-description {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.link {
+  color: #3774BA;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-feature,
+  .features-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .feature-card {
+    width: 100%;
+    padding: 10px;
+  }
+}

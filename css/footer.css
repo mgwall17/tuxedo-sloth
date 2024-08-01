@@ -1,0 +1,33 @@
+.footer {
+  color: #303030;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.footer-nav {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.footer-nav a {
+  color: #005ff9;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-nav a {
+    display: block;
+    margin: 5px 0;
+  }
+}
