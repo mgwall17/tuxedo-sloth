@@ -9,7 +9,7 @@
 }
 
 .logo-gallery img {
-  max-width: 200px;
+  max-width: 250px;
   height: auto;
   flex: 1 1 calc(50% - 20px); /* 2 columns*/
 }

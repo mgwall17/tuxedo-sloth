@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
+
   // Smooth scrolling for anchor links and padding
+
   const anchorLinks = document.querySelectorAll('a[href^="#"]');
   const defaultHeaderOffset = 120;
-  const demoHeaderOffset = 120;
+  const contactHeaderOffset = 120;
 
   anchorLinks.forEach(link => {
     link.addEventListener('click', (e) => {
@@ -12,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (targetElement) {
         const elementPosition = targetElement.getBoundingClientRect().top;
-        const headerOffset = targetId === 'demo' ? demoHeaderOffset : defaultHeaderOffset;
+        const headerOffset = targetId === 'contact' ? contactHeaderOffset : defaultHeaderOffset;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
         window.scrollTo({
@@ -22,12 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
- // Footer year fetch
+
+  // Footer year fetch
+
   const yearSpan = document.getElementById('year');
   const currentYear = new Date().getFullYear();
   yearSpan.textContent = currentYear;
 
   // Accordion functionality
+
   const accordionItems = document.querySelectorAll('.accordion-item');
 
   accordionItems.forEach(item => {
