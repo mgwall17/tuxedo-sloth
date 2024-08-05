@@ -1,0 +1,10 @@
+.contact-row {
+display: flex;
+padding: 10px;
+justify-content: center;
+align-items: center;
+align-content: center;
+gap: 10px 25px;
+align-self: stretch;
+flex-wrap: wrap;
+}

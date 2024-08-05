@@ -104,7 +104,6 @@ h1, h2, h3 {
   font-weight: 500;
   word-wrap: break-word;
   color: rgba(33, 73, 111, 1);
-  line-height: .5;
 }
 
 .left-align {
@@ -133,6 +132,7 @@ h1 {
 
 h2 {
   font-size: min(max(1.7rem, 4vw), 2rem);
+  padding-bottom: 2rem;
 }
 
 h3 {
