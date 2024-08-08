@@ -7,7 +7,7 @@
   justify-content: flex-start;
   padding: 10px;
   margin: 0 auto;
-  background-color: #d8eeff;
+  background: linear-gradient(rgba(55, 116, 186, .3), rgba(55, 195, 224, .3));
   border-radius: 5px;
 }
 
@@ -50,8 +50,8 @@
 }
 
 .testimonial-img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   display: block;
   margin: 0 auto;
 }
