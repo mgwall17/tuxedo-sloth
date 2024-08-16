@@ -7,7 +7,7 @@
   justify-content: flex-start;
   padding: 10px;
   margin: 0 auto;
-  background: linear-gradient(rgba(55, 116, 186, .3), rgba(55, 195, 224, .3));
+  background: linear-gradient(rgba(55, 116, 186, .1), rgba(55, 195, 224, .1));
   border-radius: 5px;
 }
 

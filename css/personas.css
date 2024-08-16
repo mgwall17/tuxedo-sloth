@@ -22,13 +22,17 @@
 }
 
 .card-image {
-  max-width: 300px;
-  max-height: 300px;
+  width: 300px;
+  height: 300px;
+  display: flex; /* Add Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 .card-image img {
-  width: 100%;
+  margin: 0;
 }
+
 
 .card-btn {
   text-align: center;

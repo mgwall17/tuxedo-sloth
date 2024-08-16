@@ -35,10 +35,15 @@ body {
 }
 
 .feature-icon {
-  width: 85px;
-  height: 85px;
-  background: #D2CFCF;
-  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex; 
+  justify-content: center; 
+}
+
+.feature-icon img {
+  margin: 0;
+  
 }
 
 .feature-title {
