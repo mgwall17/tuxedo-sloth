@@ -137,7 +137,7 @@ h1 {
 
 h2 {
   font-size: min(max(1.7rem, 4vw), 2rem);
-  padding-bottom: 2rem;
+  padding-bottom: .5rem;
 }
 
 h3 {
@@ -196,15 +196,15 @@ h3 {
 }
 
 .secondary {
-  background-color: rgba(57, 145, 201, 1);
+  background-color: rgb(33, 118, 172,1);
 }
 
 .secondary:hover {
-  background-color: rgba(57, 193, 223, 1);
+  background-color: rgb(28, 155, 184);
 }
 
 .secondary:active {
-  background-color: rgba(57, 124, 191, 1);
+  background-color: rgb(22, 74, 126);
 }
 
 .gitlab {
