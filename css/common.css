@@ -14,13 +14,17 @@ body {
   font-size: min(max(1rem, 4vw), 22px);
 }
 
+a {
+  color:rgb(19, 19, 229);
+}
+
+/* Components */
+
 .container {
   margin: 0 auto;
   max-width: 1400px;
   padding: 0 20px;
 }
-
-/* Components */
 
 section {
   padding-top: 1rem;
@@ -61,7 +65,7 @@ section {
   align-items: center;
   align-content: space-between;
   align-self: stretch;
-  background: #EBF7FE;
+  background: #C7E9FD;
 }
 
 .row {
