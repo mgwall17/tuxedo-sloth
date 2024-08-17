@@ -10,6 +10,10 @@
   border-bottom: 1px solid #ddd;
 }
 
+.accordion-item .icon {
+  width:40px;
+}
+
 .accordion-item:last-child {
   border-bottom: none;
 }
