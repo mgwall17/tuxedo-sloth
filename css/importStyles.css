@@ -1,10 +1,10 @@
-@import url(/css/common.css);/* text, spacing, colors, buttons, rows, cols, etc. */
-@import url(/css/navBar.css);/* CSS for navigation bar only */
-@import url(/css/personas.css);
-@import url(/css/tryExosphere.css);
-@import url(/css/overview.css);
-@import url(/css/faq.css);
-@import url(/css/ecosystem.css);
-@import url(/css/testimonial.css);
-@import url(/css/contact.css);
-@import url(/css/footer.css);
+@import url(common.css);/* text, spacing, colors, buttons, rows, cols, etc. */
+@import url(navBar.css);/* CSS for navigation bar only */
+@import url(personas.css);
+@import url(tryExosphere.css);
+@import url(overview.css);
+@import url(faq.css);
+@import url(ecosystem.css);
+@import url(testimonial.css);
+@import url(contact.css);
+@import url(footer.css);
