@@ -63,7 +63,7 @@
 }
 
 /* Media query for mobile devices */
-@media (max-width: 915px) {
+@media (max-width: 768px) {
   .nav-container {
     flex-direction: row;
     justify-content: space-between;
