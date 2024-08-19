@@ -48,33 +48,61 @@
   background-color: rgba(55, 195, 224, 0.16);
 }
 
+/* Styles for the hamburger menu */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
+
 /* Media query for mobile devices */
 @media (max-width: 915px) {
   .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .logo {
     width: 180px;
     height: 60px;
-    margin: 0 auto;
   }
 
   .nav-links {
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: none; /* Hide the nav links by default */
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    background: white;
     width: 100%;
-    gap: 10px;
+    z-index: 999; /* Ensure it overlaps content */
+    gap: 0;
     height: auto; /* Adjust height to fit content */
     margin-top: 1rem;
-    flex-wrap: wrap; /* Allow flex items to wrap */
+  }
+
+  .nav-links.active {
+    display: flex; /* Show nav links when active */
   }
 
   .nav-link {
     padding: 15px;
     font-size: 16px;
+    width: 100%;
     text-align: center; /* Align text to the center */
+    border-top: 1px solid #e0e0e0; /* Add border between links */
+  }
+
+  .hamburger-menu {
+    display: flex; /* Show the hamburger menu */
   }
 }
